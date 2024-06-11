@@ -10,102 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
-    behaviors {
-        ctrl_opt: ctrl_opt {
-            compatible = "zmk,behavior-macro";
-            label = "Control + Option";
-            bindings = <&kp LEFT_CONTROL &kp LALT>;
-            #binding-cells = <0>;
-        };
-
-        ctrl_opt_cmd: ctrl_opt_cmd {
-            compatible = "zmk,behavior-macro";
-            label = "Control + Option + Command";
-            bindings = <&kp LEFT_CONTROL &kp LALT &kp LGUI>;
-            #binding-cells = <0>;
-        };
-
-        shft_opt_l: shft_opt_l {
-            compatible = "zmk,behavior-macro";
-            label = "SHFT_OPT_L";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp L>;
-        };
-
-        cmd_shift_p: cmd_shift_p {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_SHIFT_P";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp P>;
-        };
-
-        cmd_shift_e: cmd_shift_e {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_SHIFT_E";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp E>;
-        };
-
-        cmd_shift_m: cmd_shift_m {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_SHIFT_M";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp M>;
-        };
-
-        ctrl_tilde: ctrl_tilde {
-            compatible = "zmk,behavior-macro";
-            label = "CTRL_TILDE";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp TILDE>;
-        };
-
-        shft_ctrl_tab: shft_ctrl_tab {
-            compatible = "zmk,behavior-macro";
-            label = "SHFT_CTRL_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_CONTROL &kp TAB>;
-        };
-
-        ctrl_tab: ctrl_tab {
-            compatible = "zmk,behavior-macro";
-            label = "CTRL_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp TAB>;
-        };
-
-        cmd_lbrace: cmd_lbrace {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_LBRACE";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_BRACE>;
-        };
-
-        cmd_rbrace: cmd_rbrace {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_RBRACE";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp RIGHT_BRACE>;
-        };
-
-        cmd_shft_3: cmd_shft_3 {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_SHFT_3";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_3>;
-        };
-
-        cmd_shft_4: cmd_shft_4 {
-            compatible = "zmk,behavior-macro";
-            label = "CMD_SHFT_4";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_4>;
-        };
-    };
-
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -126,19 +30,19 @@
 
         layer_1 {
             bindings = <
-&trans         &kp N6       &kp N7        &kp N8        &kp N9        &kp N0         &kp UNDERSCORE        &kp MINUS              &kp PLUS        &kp EQUAL        &kp BSLH   &kp PIPE
-&ctrl_opt_cmd  &kp N1       &kp N2        &kp N3        &kp N4        &kp N5         &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT        &kp TILDE  &kp GRAVE
-&ctrl_opt      &shft_opt_l  &cmd_shift_p  &cmd_shift_e  &cmd_shift_m  &ctrl_tilde    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT   &kp RBKT
-                                          &trans        &trans        &trans         &mo 3                 &trans                 &trans
+&trans                &kp N6         &kp N7         &kp N8         &kp N9         &kp N0           &kp UNDERSCORE        &kp MINUS              &kp PLUS        &kp EQUAL        &kp BSLH   &kp PIPE
+&kp LC(LA(LEFT_GUI))  &kp N1         &kp N2         &kp N3         &kp N4         &kp N5           &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT        &kp TILDE  &kp GRAVE
+&kp LC(LEFT_ALT)      &kp LS(LA(L))  &kp LS(LG(P))  &kp LS(LG(E))  &kp LS(LG(E))  &kp LC(GRAVE)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT   &kp RBKT
+                                                    &trans         &trans         &trans           &mo 3                 &trans                 &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &kp CARET        &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_BLE
-&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DOLLAR            &kp PERCENT              &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans           &shft_ctrl_tab  &ctrl_tab     &cmd_lbrace           &cmd_rbrace              &cmd_shft_3  &cmd_shft_4   &trans        &trans        &trans        &trans
-                                         &trans        &trans                &trans                   &trans       &trans        &trans
+&trans  &kp CARET        &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_BLE
+&trans  &kp EXCLAMATION  &kp AT_SIGN      &kp HASH      &kp DOLLAR            &kp PERCENT              &trans                &trans                &trans        &trans        &trans        &trans
+&trans  &trans           &kp LS(LC(TAB))  &kp LC(TAB)   &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &trans        &trans        &trans        &trans
+                                          &trans        &trans                &trans                   &trans                &trans                &trans
             >;
         };
 
