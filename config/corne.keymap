@@ -5,23 +5,24 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 / {
     behaviors {
-
         ctrl_opt: ctrl_opt {
             compatible = "zmk,behavior-macro";
             label = "Control + Option";
-            bindings = <&kp LCTL &kp LALT>;
+            bindings = <&kp LEFT_CONTROL &kp LALT>;
+            #binding-cells = <0>;
         };
 
         ctrl_opt_cmd: ctrl_opt_cmd {
             compatible = "zmk,behavior-macro";
             label = "Control + Option + Command";
-            bindings = <&kp LCTL &kp LALT &kp LGUI>;
+            bindings = <&kp LEFT_CONTROL &kp LALT &kp LGUI>;
+            #binding-cells = <0>;
         };
 
         shft_opt_l: shft_opt_l {
@@ -91,73 +92,63 @@
             compatible = "zmk,behavior-macro";
             label = "CMD_SHFT_3";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp 3>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_3>;
         };
 
         cmd_shft_4: cmd_shft_4 {
             compatible = "zmk,behavior-macro";
             label = "CMD_SHFT_4";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp 4>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp NUMBER_4>;
         };
     };
-        keymap {
-                compatible = "zmk,keymap";
 
-                default_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |   '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M   |  ,  |  .  |  /  | RSE  |
-//                    | ALT | GUI | LWR |         | ENT | SPC  | KOR |
-                        bindings = <
-   &kp TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P &kp BSPC
-   &mt LCTL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mo 2
-                  &kp LALT &kp LGUI &mo 1  &mo 3 &kp SPACE &kp LANG1
-                        >;
-                };
+    macros {
+    };
 
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  6  |  7  |  8  |  9  |  0  |   |  _  |  -  |  +  |  =  |  \  | "|" |
-// | CTL & ALT & GUI|  1  |  2  |  3  |  4  |  5  |   | LFT | DWN |  UP | RGT |  ~  |  `  |
-// | CTL & ALT | shft_opt_l | cmd_shift_p | cmd_shift_e | cmd_shift_m | ctrl_tilde |   |  (  |  )  |  {  |  }  |  [  |  ]  |
-//                    |     |     |     |   |     |     |     |
-                        bindings = <
-   &kp TAB &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &trans   &kp UNDER &kp MINUS &kp PLUS &kp EQUAL &kp BSLH &kp PIPE
-   &ctrl_opt_cmd &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp TILDE &lt_ctrl_grave
-   &ctrl_opt  &shft_opt_l &cmd_shift_p &cmd_shift_e &cmd_shift_m &ctrl_tilde   &kp LEFT_PAREN &kp RIGHT_PAREN &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_BRACKET &kp RIGHT_BRACKET
-                  &trans &trans &trans   &trans &trans &trans
-                        >;
-                };
-                
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  ^  |  &  |  *  |  (  |  )  |   | BT_CLR | BT0 | BT1 | BT2 | BT3 | BKSP |
-// | CTRL |  !  |  @  |  #  |  $  |  %  |   | out_ble |    |    | bt_dn | bt_up |    |
-// | SHFT |     | shft_ctrl_tab | ctrl_tab | cmd_lbrace | cmd_rbrace |   | cmd_shft_3 | cmd_shft_4 | vol_dwn | vol_up | mute |     |
-//                    |     |     |     |   | md_stp | md_pre | md_nxt |
-                        bindings = <
-   &kp TAB &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp BSPC
-   &kp LCTRL &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT    &out OUT_BLE &no &no &kp BRIGHTNESS_DOWN &kp BRIGHTNESS_UP &no
-   &kp LSHFT &no &shft_ctrl_tab &ctrl_tab &cmd_lbrace &cmd_rbrace   &cmd_shft_3 &cmd_shft_4 &kp VOLUME_DOWN &kp VOLUME_UP &kp MUTE &trans
-                  &kp LGUI &trans &kp SPACE   &kp PLAY_PAUSE &kp MEDIA_PREV &kp MEDIA_NEXT 
-                        >;
-                };
+    keymap {
+        compatible = "zmk,keymap";
 
-                function_layer {
-// -----------------------------------------------------------------------------------------
-// |     |     |     |     |     |     |   |     | F9 | F10 | F11 | F12 |     |
-// | ESC | TAB | LSHFT | LCTL | LALT | LGUI |   |     | F5 | F6 | F7 | F8 |     |
-// |     |     |     |     |     |     |   |     | F1 | F2 | F3 | F4 |     |
-//                   |     |     |     |   |     |     |     |
-                        bindings = <
-&no  &no &no &no &no &no   &no &kp F9 &kp F10 &kp F11 &kp F12 &no                        
-&kp ESC  &kp TAB &kp LSHFT &kp LCTL &kp LALT &kp LGUI   &no &kp F5 &kp F6 &kp F7 &kp F8 &no                        
-&no  &no &no &no &no &no   &no &kp F1 &kp F2 &kp F3 &kp F4 &no                        
-             &no &no &trans   &trans &no &no                        
-                        >;
-                };
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |  TAB |  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |   '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M   |  ,  |  .  |  /  | RSE  |
+            //                    | ALT | GUI | LWR |         | ENT | SPC  | KOR |
+
+            bindings = <
+&kp TAB                  &kp Q  &kp W  &kp E     &kp R     &kp T    &kp Y      &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F     &kp G    &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT                &kp Z  &kp X  &kp C     &kp V     &kp B    &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &mo 2
+                                       &kp LALT  &kp LGUI  &mo 1    &kp ENTER  &kp SPACE  &kp LANG1
+            >;
         };
+
+        layer_1 {
+            bindings = <
+&trans         &kp N6       &kp N7        &kp N8        &kp N9        &kp N0         &kp UNDERSCORE        &kp MINUS              &kp PLUS        &kp EQUAL        &kp BSLH   &kp PIPE
+&ctrl_opt_cmd  &kp N1       &kp N2        &kp N3        &kp N4        &kp N5         &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT        &kp TILDE  &kp GRAVE
+&ctrl_opt      &shft_opt_l  &cmd_shift_p  &cmd_shift_e  &cmd_shift_m  &ctrl_tilde    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT   &kp RBKT
+                                          &trans        &trans        &trans         &mo 3                 &trans                 &trans
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &kp CARET        &kp AMPERSAND   &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_BLE
+&trans  &kp EXCLAMATION  &kp AT_SIGN     &kp HASH      &kp DOLLAR            &kp PERCENT              &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &trans           &shft_ctrl_tab  &ctrl_tab     &cmd_lbrace           &cmd_rbrace              &cmd_shft_3  &cmd_shft_4   &trans        &trans        &trans        &trans
+                                         &trans        &trans                &trans                   &trans       &trans        &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans   &trans   &trans     &trans     &trans    &trans      &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&kp ESC  &kp TAB  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI    &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans   &trans   &trans     &trans     &trans    &trans      &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                             &trans     &trans    &trans      &trans  &trans  &trans
+            >;
+        };
+    };
 };
