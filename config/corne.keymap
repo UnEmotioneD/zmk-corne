@@ -10,6 +10,16 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    behaviors {
+        ctrl_opt: behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CTRL+OPT";
+            #binding-cells = <2>;
+            bindings = <&kp LC(OPT)>, <&kp OPT>;
+            tap-ms = <200>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,7 +42,7 @@
             bindings = <
 &trans                &kp N6         &kp N7         &kp N8         &kp N9         &kp N0           &kp UNDERSCORE        &kp MINUS              &kp PLUS        &kp EQUAL        &kp BSLH   &kp PIPE
 &kp LC(LA(LEFT_GUI))  &kp N1         &kp N2         &kp N3         &kp N4         &kp N5           &kp LEFT              &kp DOWN               &kp UP          &kp RIGHT        &kp TILDE  &kp GRAVE
-&kp LC(LEFT_ALT)      &kp LS(LA(L))  &kp LS(LG(P))  &kp LS(LG(E))  &kp LS(LG(E))  &kp LC(GRAVE)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT   &kp RBKT
+&ctrl_opt             &kp LS(LA(L))  &kp LS(LG(P))  &kp LS(LG(E))  &kp LS(LG(E))  &kp LC(GRAVE)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LBKT   &kp RBKT
                                                     &trans         &trans         &trans           &mo 3                 &trans                 &trans
             >;
         };
