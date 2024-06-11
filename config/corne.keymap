@@ -9,47 +9,153 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+    behaviors {
+
+        ctrl_opt: ctrl_opt {
+            compatible = "zmk,behavior-macro";
+            label = "Control + Option";
+            bindings = <&kp LCTL &kp LALT>;
+        };
+
+        ctrl_opt_cmd: ctrl_opt_cmd {
+            compatible = "zmk,behavior-macro";
+            label = "Control + Option + Command";
+            bindings = <&kp LCTL &kp LALT &kp LGUI>;
+        };
+
+        shft_opt_l: shft_opt_l {
+            compatible = "zmk,behavior-macro";
+            label = "SHFT_OPT_L";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_ALT &kp L>;
+        };
+
+        cmd_shift_p: cmd_shift_p {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SHIFT_P";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp P>;
+        };
+
+        cmd_shift_e: cmd_shift_e {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SHIFT_E";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp E>;
+        };
+
+        cmd_shift_m: cmd_shift_m {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SHIFT_M";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp M>;
+        };
+
+        ctrl_tilde: ctrl_tilde {
+            compatible = "zmk,behavior-macro";
+            label = "CTRL_TILDE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp TILDE>;
+        };
+
+        shft_ctrl_tab: shft_ctrl_tab {
+            compatible = "zmk,behavior-macro";
+            label = "SHFT_CTRL_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT &kp LEFT_CONTROL &kp TAB>;
+        };
+
+        ctrl_tab: ctrl_tab {
+            compatible = "zmk,behavior-macro";
+            label = "CTRL_TAB";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp TAB>;
+        };
+
+        cmd_lbrace: cmd_lbrace {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_LBRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_BRACE>;
+        };
+
+        cmd_rbrace: cmd_rbrace {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_RBRACE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp RIGHT_BRACE>;
+        };
+
+        cmd_shft_3: cmd_shft_3 {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SHFT_3";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp 3>;
+        };
+
+        cmd_shft_4: cmd_shft_4 {
+            compatible = "zmk,behavior-macro";
+            label = "CMD_SHFT_4";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_GUI &kp LEFT_SHIFT &kp 4>;
+        };
+    };
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+// |  TAB |  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |   '   |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M   |  ,  |  .  |  /  | RSE  |
+//                    | ALT | GUI | LWR |         | ENT | SPC  | KOR |
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                  &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-                        >;
-                };
-                lower_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
-                                    &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &kp TAB &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U &kp I &kp O &kp P &kp BSPC
+   &mt LCTL ESC &kp A &kp S &kp D &kp F &kp G   &kp H &kp J &kp K &kp L &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &mo 2
+                  &kp LALT &kp LGUI &mo 1  &mo 3 &kp SPACE &kp LANG1
                         >;
                 };
 
+                lower_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  6  |  7  |  8  |  9  |  0  |   |  _  |  -  |  +  |  =  |  \  | "|" |
+// | CTL & ALT & GUI|  1  |  2  |  3  |  4  |  5  |   | LFT | DWN |  UP | RGT |  ~  |  `  |
+// | CTL & ALT | shft_opt_l | cmd_shift_p | cmd_shift_e | cmd_shift_m | ctrl_tilde |   |  (  |  )  |  {  |  }  |  [  |  ]  |
+//                    |     |     |     |   |     |     |     |
+                        bindings = <
+   &kp TAB &kp 6 &kp 7 &kp 8 &kp 9 &kp 0 &trans   &kp UNDER &kp MINUS &kp PLUS &kp EQUAL &kp BSLH &kp PIPE
+   &ctrl_opt_cmd &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp TILDE &lt_ctrl_grave
+   &ctrl_opt  &shft_opt_l &cmd_shift_p &cmd_shift_e &cmd_shift_m &ctrl_tilde   &kp LEFT_PAREN &kp RIGHT_PAREN &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_BRACKET &kp RIGHT_BRACKET
+                  &trans &trans &trans   &trans &trans &trans
+                        >;
+                };
+                
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  TAB |  ^  |  &  |  *  |  (  |  )  |   | BT_CLR | BT0 | BT1 | BT2 | BT3 | BKSP |
+// | CTRL |  !  |  @  |  #  |  $  |  %  |   |    |    |    | bt_dn | bt_up |    |
+// | SHFT |     | shft_ctrl_tab | ctrl_tab | cmd_lbrace | cmd_rbrace |   | cmd_shft_3 | cmd_shft_4 | vol_dwn | vol_up | mute |     |
+//                    |     |     |     |   | md_stp | md_pre | md_nxt |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp TAB &kp CARET &kp AMPS &kp ASTRK &kp LPAR &kp RPAR   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &kp BSPC
+   &kp LCTRL &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT    &no &no &no &kp BRIGHTNESS_DOWN &kp BRIGHTNESS_UP &no
+   &kp LSHFT &no &shft_ctrl_tab &ctrl_tab &cmd_lbrace &cmd_rbrace   &cmd_shft_3 &cmd_shft_4 &kp VOLUME_DOWN &kp VOLUME_UP &kp MUTE &trans
+                  &kp LGUI &trans &kp SPACE   &kp PLAY_PAUSE &kp MEDIA_PREV &kp MEDIA_NEXT 
+                        >;
+                };
+
+                function_layer {
+// -----------------------------------------------------------------------------------------
+// |     |     |     |     |     |     |   |     | F9 | F10 | F11 | F12 |     |
+// | ESC | TAB | LSHFT | LCTL | LALT | LGUI |   |     | F5 | F6 | F7 | F8 |     |
+// |     |     |     |     |     |     |   |     | F1 | F2 | F3 | F4 |     |
+//                   |     |     |     |   |     |     |     |
+                        bindings = <
+&no  &no &no &no &no &no   &no &kp F9 &kp F10 &kp F11 &kp F12 &no                        
+&kp ESC  &kp TAB &kp LSHFT &kp LCTL &kp LALT &kp LGUI   &no &kp F5 &kp F6 &kp F7 &kp F8 &no                        
+&no  &no &no &no &no &no   &no &kp F1 &kp F2 &kp F3 &kp F4 &no                        
+             &no &no &trans   &trans &no &no                        
                         >;
                 };
         };
