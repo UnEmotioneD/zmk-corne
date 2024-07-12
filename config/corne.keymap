@@ -14,182 +14,182 @@
         shft_tab: shift_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&shft_tab &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&kp LEFT_SHIFT &kp TAB>;
             label = "SHIFT_TAB";
         };
 
         lcs_tab: lcs_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lcs_tab &kp LEFT_CONTROL &kp LEFT_SHIFT &kp TAB>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp TAB>;
             label = "LCS_TAB";
         };
 
         ctl_f5: ctl_f5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ctl_f5 &kp LEFT_CONTROL &kp F5>;
+            bindings = <&kp LEFT_CONTROL &kp F5>;
             label = "CTL_F5";
         };
 
         ctrl_tilde: ctrl_tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&ctrl_tilde &kp LEFT_CONTROL &kp TILDE>;
+            bindings = <&kp LEFT_CONTROL &kp TILDE>;
             label = "CTRL_TILDE";
         };
 
         sgui_m: sgui_m {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_m &kp LEFT_COMMAND &kp LEFT_SHIFT &kp M>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp M>;
             label = "SGUI_M";
         };
 
         sgui_e: sgui_e {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_e &kp LEFT_COMMAND &kp LEFT_SHIFT &kp E>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp E>;
             label = "SGUI_E";
         };
 
         sgui_p: sgui_p {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_p &kp LEFT_COMMAND &kp LEFT_SHIFT &kp P>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp P>;
             label = "SGUI_P";
         };
 
         lcs_g: rcs_g {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lcs_g &kp LEFT_CONTROL &kp LEFT_SHIFT &kp G>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp G>;
             label = "RCS_G";
         };
 
         lsa_f: lsa_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lsa_f &kp LEFT_ALT &kp LEFT_SHIFT &kp F>;
+            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp F>;
             label = "LSA_F";
         };
 
         sgui_3: sgui_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_3 &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
             label = "SGUI_3";
         };
 
         sgui_4: sgui_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_4 &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
             label = "SGUI_4";
         };
 
         sgui_5: sgui_5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_5 &kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_5>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_5>;
             label = "SGUI_5";
         };
 
         lgui_lbrc: lgui_lbrc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lgui_lbrc &kp LEFT_COMMAND &kp LEFT_BRACKET>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_BRACKET>;
             label = "LGUI_LBRC";
         };
 
         lgui_rbrc: lgui_rbrc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lgui_rbrc &kp LEFT_COMMAND &kp RIGHT_BRACKET>;
+            bindings = <&kp LEFT_COMMAND &kp RIGHT_BRACKET>;
             label = "LGUI_RBRC";
         };
 
         lsft_f6: lsft_f6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lsft_f6 &kp LEFT_SHIFT &kp F6>;
+            bindings = <&kp LEFT_SHIFT &kp F6>;
             label = "LSFT_F6";
         };
 
         lgui_1: lgui_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lgui_1 &kp LEFT_COMMAND &kp NUMBER_1>;
+            bindings = <&kp LEFT_COMMAND &kp NUMBER_1>;
             label = "LGUI_1";
         };
 
         lgui_4: lgui_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lgui_4 &kp LEFT_COMMAND &kp NUMBER_4>;
+            bindings = <&kp LEFT_COMMAND &kp NUMBER_4>;
             label = "LGUI_4";
         };
 
         lalt_f12: lalt_f12 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lalt_f12 &kp LEFT_ALT &kp F12>;
+            bindings = <&kp LEFT_ALT &kp F12>;
             label = "LALT_F12";
         };
 
         lgui_6: lgui_6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lgui_6 &kp LEFT_COMMAND &kp NUMBER_6>;
+            bindings = <&kp LEFT_COMMAND &kp NUMBER_6>;
             label = "LGUI_6";
         };
 
         lcs_r: rcs_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lcs_r &kp LEFT_CONTROL &kp LEFT_SHIFT &kp R>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp R>;
             label = "RCS_R";
         };
 
         lag_l: lag_l {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lag_l &kp LEFT_ALT &kp LEFT_COMMAND &kp L>;
+            bindings = <&kp LEFT_ALT &kp LEFT_COMMAND &kp L>;
             label = "LAG_L";
         };
 
         lgui_f11: lgui_f11 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lgui_f11 &kp LEFT_COMMAND &kp F11>;
+            bindings = <&kp LEFT_COMMAND &kp F11>;
             label = "LGUI_F11";
         };
 
         sgui_o: sgui_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_o &kp LEFT_COMMAND &kp LEFT_SHIFT &kp O>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp O>;
             label = "SGUI_O";
         };
 
         sgui_f: sgui_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sgui_f &kp LEFT_COMMAND &kp LEFT_SHIFT &kp F>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp F>;
             label = "SGUI_F";
         };
 
         lcag: lcag {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lcag &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND>;
             label = "LCAG";
         };
 
         lca: lco {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&lca &kp LEFT_CONTROL &kp LEFT_ALT>;
+            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT>;
             label = "LCO";
         };
     };
