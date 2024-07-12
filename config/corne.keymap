@@ -10,13 +10,35 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    behaviors {
+        shift_tab = &custom_behavior_shift_tab;
+    };
+
+    custom_behavior_shift_tab: custom_behavior {
+        compatible = "zmk,behavior-macro";
+        label = "Shift+Tab";
+
+        #binding-cells = <0>;
+
+        key-press {
+            bindings = <&kp LEFT_SHIFT &kp TAB>;
+        };
+
+        key-release {
+            bindings = <&kp LEFT_SHIFT &kp TAB>;
+        };
+    };
+};
+
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |   '   |
+            // | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M   |  ,  |  .  |  /  | RSE  |
             //                    | ALT | GUI | LWR |         | ENT | SPC  | KOR |
 
@@ -41,7 +63,7 @@
             bindings = <
 &trans  &none  &none  &kp TILDE  &kp PIPE       &none    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
 &trans  &none  &none  &kp GRAVE  &kp BACKSLASH  &none    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &none       &trans
-&trans  &none  &none  &none      &none          &none    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
+&trans  &none  &none  &shift_tab &none          &none    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
                       &trans     &trans         &mo 3    &trans      &trans                &trans
             >;
         };
