@@ -14,7 +14,10 @@
         shft_tab: shift_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LEFT_SHIFT &kp TAB>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp TAB>,
+                <&macro_release>;
 
             label = "SHIFT_TAB";
         };
