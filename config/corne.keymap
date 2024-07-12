@@ -9,27 +9,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
-/ {
-    behaviors {
-        shift_tab = &custom_behavior_shift_tab;
-    };
-
-    custom_behavior_shift_tab: custom_behavior {
-        compatible = "zmk,behavior-macro";
-        label = "Shift+Tab";
-
-        #binding-cells = <0>;
-
-        key-press {
-            bindings = <&kp LEFT_SHIFT &kp TAB>;
-        };
-
-        key-release {
-            bindings = <&kp LEFT_SHIFT &kp TAB>;
-        };
-    };
-};
-
 
 / {
     keymap {
