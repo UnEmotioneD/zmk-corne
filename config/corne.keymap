@@ -226,7 +226,7 @@
             bindings = <
 &trans  &none  &none     &kp TILDE  &kp PIPE       &none         &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
 &trans  &lcag  &lca      &kp GRAVE  &kp BACKSLASH  &none         &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &none       &trans
-&trans  &none  &lcs_tab  &lcs_tab   &lgui_lbrc     &lgui_rbrc    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
+&trans  &none  &lcs_tab  &shft_tab  &lgui_lbrc     &lgui_rbrc    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
                          &trans     &trans         &mo 3         &trans      &trans                &trans
             >;
         };
