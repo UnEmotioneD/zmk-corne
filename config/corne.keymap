@@ -38,8 +38,8 @@
             layers = <0>;
         };
 
-        zx_undo_0 {
-            bindings = <&kp LG(Z)>;
+        zx_cut_0 {
+            bindings = <&kp LG(X)>;
             key-positions = <25 26>;
             timeout-ms = <25>;
             layers = <0>;
