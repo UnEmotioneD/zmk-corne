@@ -194,6 +194,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        jk_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
