@@ -10,191 +10,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-
-        lcs_tab: lcs_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp TAB>;
-            label = "LCS_TAB";
-        };
-
-        shft_tab: shift_tab {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp TAB>;
-            label = "SHIFT_TAB";
-        };
-
-        lgui_lbrc: lgui_lbrc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_BRACKET>;
-            label = "LGUI_LBRC";
-        };
-
-        lgui_rbrc: lgui_rbrc {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp RIGHT_BRACKET>;
-            label = "LGUI_RBRC";
-        };
-
-        sgui_3: sgui_3 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_3>;
-            label = "SGUI_3";
-        };
-
-        sgui_4: sgui_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
-            label = "SGUI_4";
-        };
-
-        sgui_5: sgui_5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_5>;
-            label = "SGUI_5";
-        };
-
-        ctl_f5: ctl_f5 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp F5>;
-            label = "CTL_F5";
-        };
-
-        ctrl_tilde: ctrl_tilde {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp TILDE>;
-            label = "CTRL_TILDE";
-        };
-
-        sgui_m: sgui_m {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp M>;
-            label = "SGUI_M";
-        };
-
-        sgui_e: sgui_e {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp E>;
-            label = "SGUI_E";
-        };
-
-        sgui_p: sgui_p {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp P>;
-            label = "SGUI_P";
-        };
-
-        lcs_g: rcs_g {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp G>;
-            label = "RCS_G";
-        };
-
-        lsa_f: lsa_f {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_SHIFT &kp F>;
-            label = "LSA_F";
-        };
-
-        lsft_f6: lsft_f6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp F6>;
-            label = "LSFT_F6";
-        };
-
-        lgui_1: lgui_1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp NUMBER_1>;
-            label = "LGUI_1";
-        };
-
-        lgui_4: lgui_4 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp NUMBER_4>;
-            label = "LGUI_4";
-        };
-
-        lalt_f12: lalt_f12 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp F12>;
-            label = "LALT_F12";
-        };
-
-        lgui_6: lgui_6 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp NUMBER_6>;
-            label = "LGUI_6";
-        };
-
-        lcs_r: rcs_r {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp R>;
-            label = "RCS_R";
-        };
-
-        lag_l: lag_l {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_COMMAND &kp L>;
-            label = "LAG_L";
-        };
-
-        lgui_f11: lgui_f11 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp F11>;
-            label = "LGUI_F11";
-        };
-
-        sgui_o: sgui_o {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp O>;
-            label = "SGUI_O";
-        };
-
-        sgui_f: sgui_f {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp F>;
-            label = "SGUI_F";
-        };
-
-        lcag: lcag {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_COMMAND>;
-            label = "LCAG";
-        };
-
-        lca: lco {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT>;
-            label = "LCO";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -224,19 +39,19 @@
 
         layer_2 {
             bindings = <
-&trans  &none  &none     &kp TILDE  &kp PIPE       &none         &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
-&trans  &lcag  &lca      &kp GRAVE  &kp BACKSLASH  &none         &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &none       &trans
-&trans  &none  &lcs_tab  &shft_tab  &lgui_lbrc     &lgui_rbrc    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
-                         &trans     &trans         &mo 3         &trans      &trans                &trans
+&trans  &none                 &none             &kp TILDE    &kp PIPE              &none                    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
+&trans  &kp LC(LA(LEFT_GUI))  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &none       &trans
+&trans  &none                 &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
+                                                &trans       &trans                &mo 3                    &trans      &trans                &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &sgui_f   &sgui_o  &kp LEFT_COMMAND  &kp F7     &lgui_f11    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &ext_power EP_OFF
-&trans  &lsft_f6  &lgui_1  &lgui_4           &lalt_f12  &lcs_r       &ctl_f5     &ctrl_tilde   &sgui_m       &sgui_e       &sgui_p       &trans
-&trans  &lag_l    &trans   &trans            &lgui_6    &trans       &sgui_3     &sgui_4       &sgui_5       &lcs_g        &lsa_f        &trans
-                           &trans            &trans     &trans       &trans      &trans        &trans
+&trans  &kp LS(LG(F))  &kp LS(LG(O))     &kp LEFT_COMMAND  &kp F7            &kp LG(F11)      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2   &bt BT_SEL 3   &ext_power EP_TOG
+&trans  &kp LS(F6)     &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LA(F12)       &kp LS(LA(R))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &trans
+&trans  &kp LA(LG(L))  &none             &none             &kp LG(NUMBER_6)  &none            &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &trans
+                                         &trans            &trans            &trans           &trans                &trans                &trans
             >;
         };
     };
