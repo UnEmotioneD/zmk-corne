@@ -41,6 +41,7 @@
             key-positions = <25 26>;
             timeout-ms = <25>;
             layers = <0>;
+            slow-release;
         };
 
         xc_copy_0 {
@@ -48,6 +49,7 @@
             key-positions = <26 27>;
             timeout-ms = <25>;
             layers = <0>;
+            slow-release;
         };
 
         cv_paste_0 {
@@ -55,6 +57,7 @@
             key-positions = <27 28>;
             timeout-ms = <25>;
             layers = <0>;
+            slow-release;
         };
     };
 
@@ -69,10 +72,10 @@
             //                    | GUI | SHFT | LWR |        | RIS | SPC  | KOR |
 
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I              &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_ALT             &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp SQT
-                                       &kp LGUI  &kp RSHFT  &mo 1    &mo 2  &kp SPACE  &mt RIGHT_GUI F16
+&kp TAB                  &kp Q               &kp W           &kp E           &kp R             &kp T    &kp Y  &kp U      &kp I              &kp O    &kp P     &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G    &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_ALT             &kp Z               &kp X           &kp C           &kp V             &kp B    &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp SQT
+                                                             &kp LGUI        &kp RSHFT         &mo 1    &mo 2  &kp SPACE  &mt RIGHT_GUI F16
             >;
         };
 
@@ -105,10 +108,10 @@
 
         layer_4 {
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LGUI                 &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
-                                       &kp LALT  &kp LSHFT  &mo 5    &mo 6  &kp SPACE  &kp RALT
+&kp TAB                  &kp Q               &kp W           &kp E           &kp R             &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &mt LEFT_CONTROL A  &mt LEFT_GUI S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp LGUI                 &kp Z               &kp X           &kp C           &kp V             &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+                                                             &kp LALT        &kp LSHFT         &mo 5    &mo 6  &kp SPACE  &kp RALT
             >;
         };
 
