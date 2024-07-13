@@ -194,54 +194,20 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        jk_escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 20>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-        };
-
-        zx_undo {
-            bindings = <&kp LG(Z)>;
-            key-positions = <25 26>;
-        };
-
-        xc_copy {
-            bindings = <&kp LG(C)>;
-            key-positions = <26 27>;
-        };
-
-        cv_paste {
-            bindings = <&kp LG(V)>;
-            key-positions = <27 28>;
-        };
-
-        fj_f16 {
-            bindings = <&kp F16>;
-            key-positions = <16 19>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |         |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M   |  ,  |  .  |  /  | RSE  |
-            //                    | ALT | GUI | LWR |         | ENT | SPC  | KOR |
+            // | CTRL & ESC |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  | ENT  |
+            // |  ALT |  Z  |  X  |  C  |  V  |  B  |         |  N  |  M   |  ,  |  .  |  /  |  '   |
+            //                    | GUI | SHFT | LWR |        | RIS | SPC  | KOR |
 
             bindings = <
 &kp TAB                  &kp Q               &kp W           &kp E           &kp R             &kp T    &kp Y  &kp U      &kp I              &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G    &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LEFT_ALT             &kp Z               &kp X           &kp C           &kp V             &kp B    &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp ENTER
+&mt LEFT_CONTROL ESCAPE  &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_GUI D  &mt LEFT_SHIFT F  &kp G    &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp ENTER
+&kp LEFT_ALT             &kp Z               &kp X           &kp C           &kp V             &kp B    &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp SQT
                                                              &kp LGUI        &kp RSHFT         &mo 1    &mo 2  &kp SPACE  &mt RIGHT_GUI F16
             >;
         };
@@ -249,8 +215,8 @@
         layer_1 {
             bindings = <
 &trans  &kp EXCL      &kp AT    &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR      &trans
-&trans  &kp N1        &kp N2    &kp N3    &kp N4      &kp N5         &kp NUMBER_6    &kp N7     &kp N8     &kp N9     &kp N0        &kp DOUBLE_QUOTES
-&trans  &kp CAPSLOCK  &kp LBKT  &kp LBRC  &kp RBRC    &kp RBKT       &kp UNDERSCORE  &kp MINUS  &kp PLUS   &kp EQUAL  &kp QUESTION  &trans
+&trans  &kp N1        &kp N2    &kp N3    &kp N4      &kp N5         &kp NUMBER_6    &kp N7     &kp N8     &kp N9     &kp N0        &trans
+&trans  &kp CAPSLOCK  &kp LBKT  &kp LBRC  &kp RBRC    &kp RBKT       &kp UNDERSCORE  &kp MINUS  &kp PLUS   &kp EQUAL  &kp QUESTION  &kp DOUBLE_QUOTES
                                 &trans    &trans      &trans         &mo 3           &trans     &trans
             >;
         };
