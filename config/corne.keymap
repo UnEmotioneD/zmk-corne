@@ -24,41 +24,24 @@
     combos {
         compatible = "zmk,combos";
 
-        jk_escape_0 {
-            bindings = <&kp ESCAPE>;
-            key-positions = <19 20>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        kl_enter_0 {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        zx_cut_0 {
-            bindings = <&kp LG(X)>;
+        zx_undo {
+            bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
             timeout-ms = <25>;
-            layers = <0>;
             slow-release;
         };
 
-        xc_copy_0 {
+        xc_copy {
             bindings = <&kp LG(C)>;
             key-positions = <26 27>;
             timeout-ms = <25>;
-            layers = <0>;
             slow-release;
         };
 
-        cv_paste_0 {
+        cv_paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
             timeout-ms = <25>;
-            layers = <0>;
             slow-release;
         };
     };
@@ -75,8 +58,8 @@
 
             bindings = <
 &kp TAB                  &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I              &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp ENTER
-&kp LEFT_ALT             &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp SQT
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K              &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LEFT_ALT             &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA          &kp DOT  &kp FSLH  &kp ENTER
                                        &kp LGUI  &kp RSHFT  &mo 1    &mo 2  &kp SPACE  &mt RIGHT_GUI F16
             >;
         };
@@ -92,10 +75,10 @@
 
         layer_2 {
             bindings = <
-&trans  &none                 &none             &kp TILDE    &kp PIPE              &none                    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE                            &trans
-&trans  &kp LC(LA(LEFT_GUI))  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &trans
-&trans  &none                 &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY                            &kp C_MUTE
-                                                &trans       &trans                &mo 3                    &trans      &trans                &trans
+&trans  &none                                 &none             &kp TILDE    &kp PIPE              &none                    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
+&trans  &kp LC(LA(LEFT_GUI))                  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &trans      &trans
+&trans  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_PLAY  &kp C_MUTE
+                                                                &trans       &trans                &mo 3                    &trans      &trans                &trans
             >;
         };
 
@@ -111,8 +94,8 @@
         layer_4 {
             bindings = <
 &kp TAB                  &kp Q  &kp W  &kp E     &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp ENTER
-&kp LGUI                 &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp APOS
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D     &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&kp LGUI                 &kp Z  &kp X  &kp C     &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp ENTER
                                        &kp LALT  &kp LSHFT  &mo 5    &mo 6  &kp SPACE  &kp RALT
             >;
         };
