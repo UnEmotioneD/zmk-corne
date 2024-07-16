@@ -24,25 +24,182 @@
     combos {
         compatible = "zmk,combos";
 
-        zx_undo {
+        zx_undo_0 {
             bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
             timeout-ms = <25>;
             slow-release;
         };
 
-        xc_copy {
+        xc_copy_0 {
             bindings = <&kp LG(C)>;
             key-positions = <26 27>;
             timeout-ms = <25>;
             slow-release;
         };
 
-        cv_paste {
+        cv_paste_0 {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
             timeout-ms = <25>;
             slow-release;
+        };
+
+        sd_exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <14 15>;
+            timeout-ms = <25>;
+        };
+
+        df_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <15 16>;
+            timeout-ms = <25>;
+        };
+
+        we_ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <2 3>;
+            timeout-ms = <25>;
+        };
+
+        er_asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <3 4>;
+            timeout-ms = <25>;
+        };
+
+        jk_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <19 20>;
+            timeout-ms = <25>;
+        };
+
+        ui_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <7 8>;
+            timeout-ms = <25>;
+        };
+
+        kl_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <20 21>;
+            timeout-ms = <25>;
+        };
+
+        io_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <8 9>;
+            timeout-ms = <25>;
+        };
+
+        less_than {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <31 32>;
+            timeout-ms = <25>;
+        };
+
+        greater_than {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <32 33>;
+            timeout-ms = <25>;
+        };
+
+        dk_lprn {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 20>;
+            timeout-ms = <25>;
+        };
+
+        fj_rprn {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <16 19>;
+            timeout-ms = <25>;
+        };
+
+        left_curly_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <28 31>;
+            timeout-ms = <25>;
+        };
+
+        right_curly_brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <28 31>;
+        };
+
+        left_brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <27 32>;
+            timeout-ms = <25>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 8>;
+            timeout-ms = <25>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <4 7>;
+            timeout-ms = <25>;
+        };
+
+        qw_close_window_0 {
+            bindings = <&kp LG(W)>;
+            key-positions = <1 2>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <0>;
+        };
+
+        add_window_0 {
+            bindings = <&kp LG(T)>;
+            key-positions = <4 5>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <0>;
+        };
+
+        copy_4 {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <4>;
+        };
+
+        paste_4 {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <4>;
+        };
+
+        undo_4 {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25 26>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <4>;
+        };
+
+        close_window_4 {
+            bindings = <&kp LC(W)>;
+            key-positions = <1 2>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <4>;
+        };
+
+        add_window_4 {
+            bindings = <&kp LC(T)>;
+            key-positions = <4 5>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <4>;
         };
     };
 
@@ -76,8 +233,8 @@
         layer_2 {
             bindings = <
 &trans  &none                                 &none             &kp TILDE    &kp PIPE              &none                    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
-&trans  &kp LC(LA(LEFT_GUI))                  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &kp C_MUTE
-&trans  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &none       &trans
+&trans  &kp LC(LA(LEFT_GUI))                  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &none
+&trans  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_MUTE  &trans
                                                                 &trans       &trans                &mo 3                    &trans      &trans                &trans
             >;
         };
@@ -112,8 +269,8 @@
         layer_6 {
             bindings = <
 &trans  &none             &none            &kp TILDE    &kp PIPE       &none            &none           &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp INSERT  &kp DELETE  &trans
-&trans  &kp LS(LEFT_GUI)  &kp LEFT_GUI     &kp GRAVE    &kp BACKSLASH  &none            &kp LEFT        &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &kp C_MUTE
-&trans  &none             &kp LS(LC(TAB))  &kp LC(TAB)  &kp LA(LEFT)   &kp LA(RIGHT)    &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT  &none       &trans
+&trans  &kp LS(LEFT_GUI)  &kp LEFT_GUI     &kp GRAVE    &kp BACKSLASH  &none            &kp LEFT        &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &none
+&trans  &none             &kp LS(LC(TAB))  &kp LC(TAB)  &kp LA(LEFT)   &kp LA(RIGHT)    &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT  &kp C_MUTE  &trans
                                            &trans       &trans         &mo 7            &trans          &trans                &trans
             >;
         };
