@@ -48,25 +48,25 @@
         sd_exclamation {
             bindings = <&kp EXCLAMATION>;
             key-positions = <14 15>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         df_percent {
             bindings = <&kp PERCENT>;
             key-positions = <15 16>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         we_ampersand {
             bindings = <&kp AMPERSAND>;
             key-positions = <2 3>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         er_asterisk {
             bindings = <&kp ASTERISK>;
             key-positions = <3 4>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         jk_minus {
@@ -78,31 +78,31 @@
         ui_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <7 8>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         kl_equal {
             bindings = <&kp EQUAL>;
             key-positions = <20 21>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         io_plus {
             bindings = <&kp PLUS>;
             key-positions = <8 9>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         less_than {
             bindings = <&kp LESS_THAN>;
             key-positions = <31 32>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         greater_than {
             bindings = <&kp GREATER_THAN>;
             key-positions = <32 33>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         dk_lprn {
@@ -114,42 +114,43 @@
         fj_rprn {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <16 19>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         left_curly_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <28 31>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         right_curly_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <28 31>;
+            timeout-ms = <40>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <27 32>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <3 8>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <4 7>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
         };
 
         qw_close_window_0 {
             bindings = <&kp LG(W)>;
             key-positions = <1 2>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <0>;
         };
@@ -157,7 +158,7 @@
         add_window_0 {
             bindings = <&kp LG(T)>;
             key-positions = <4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <0>;
         };
@@ -165,7 +166,7 @@
         copy_4 {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <4>;
         };
@@ -173,7 +174,7 @@
         paste_4 {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <4>;
         };
@@ -181,7 +182,7 @@
         undo_4 {
             bindings = <&kp LC(Z)>;
             key-positions = <25 26>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <4>;
         };
@@ -189,7 +190,7 @@
         close_window_4 {
             bindings = <&kp LC(W)>;
             key-positions = <1 2>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <4>;
         };
@@ -197,7 +198,7 @@
         add_window_4 {
             bindings = <&kp LC(T)>;
             key-positions = <4 5>;
-            timeout-ms = <25>;
+            timeout-ms = <40>;
             slow-release;
             layers = <4>;
         };
