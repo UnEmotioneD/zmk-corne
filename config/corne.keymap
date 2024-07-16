@@ -24,30 +24,23 @@
     combos {
         compatible = "zmk,combos";
 
-        zx_undo_0 {
-            bindings = <&kp LG(Z)>;
-            key-positions = <25 26>;
-            timeout-ms = <25>;
-            slow-release;
-        };
-
         xc_copy_0 {
             bindings = <&kp LG(C)>;
-            key-positions = <26 27>;
+            key-positions = <25 26>;
             timeout-ms = <25>;
             slow-release;
         };
 
         cv_paste_0 {
             bindings = <&kp LG(V)>;
-            key-positions = <27 28>;
+            key-positions = <27 26>;
             timeout-ms = <25>;
             slow-release;
         };
 
         copy_4 {
             bindings = <&kp LC(C)>;
-            key-positions = <26 27>;
+            key-positions = <26 25>;
             timeout-ms = <25>;
             slow-release;
             layers = <4>;
@@ -55,15 +48,7 @@
 
         paste_4 {
             bindings = <&kp LC(V)>;
-            key-positions = <27 28>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <4>;
-        };
-
-        undo_4 {
-            bindings = <&kp LC(Z)>;
-            key-positions = <25 26>;
+            key-positions = <27 26>;
             timeout-ms = <25>;
             slow-release;
             layers = <4>;
