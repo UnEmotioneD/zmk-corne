@@ -105,49 +105,49 @@
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <21 22>;
+            key-positions = <19 20>;
             timeout-ms = <25>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <9 10>;
+            key-positions = <7 8>;
             timeout-ms = <25>;
         };
 
         left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <19 20>;
+            key-positions = <20 21>;
             timeout-ms = <25>;
         };
 
         right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
             timeout-ms = <25>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <31 32>;
+            key-positions = <32 33>;
             timeout-ms = <25>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <32 33>;
+            key-positions = <33 34>;
             timeout-ms = <25>;
         };
 
         left_bracekt {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             timeout-ms = <25>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <8 9>;
+            key-positions = <9 10>;
             timeout-ms = <25>;
         };
     };
