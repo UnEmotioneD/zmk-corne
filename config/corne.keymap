@@ -150,6 +150,22 @@
             key-positions = <9 10>;
             timeout-ms = <25>;
         };
+
+        comm_tab_0 {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <31 32>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <0>;
+        };
+
+        alt_tab_4 {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <31 32>;
+            timeout-ms = <25>;
+            slow-release;
+            layers = <4>;
+        };
     };
 
     keymap {
