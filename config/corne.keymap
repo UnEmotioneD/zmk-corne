@@ -153,7 +153,7 @@
 
         comm_tab_0 {
             bindings = <&kp LG(TAB)>;
-            key-positions = <31 32>;
+            key-positions = <18 19>;
             timeout-ms = <25>;
             slow-release;
             layers = <0>;
@@ -161,10 +161,35 @@
 
         alt_tab_4 {
             bindings = <&kp LA(TAB)>;
-            key-positions = <31 32>;
+            key-positions = <18 19>;
             timeout-ms = <25>;
             slow-release;
             layers = <4>;
+        };
+
+        quite_app_0 {
+            bindings = <&kp LG(Q)>;
+            key-positions = <4 5>;
+        };
+
+        close_window_0 {
+            bindings = <&kp LG(W)>;
+            key-positions = <16 17>;
+        };
+
+        new_window_0 {
+            bindings = <&kp LG(T)>;
+            key-positions = <28 29>;
+        };
+
+        separate_window_0 {
+            bindings = <&kp LG(N)>;
+            key-positions = <30 31>;
+        };
+
+        comm_spc {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <31 32>;
         };
     };
 
