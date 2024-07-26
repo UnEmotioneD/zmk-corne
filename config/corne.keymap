@@ -170,26 +170,41 @@
         quite_app_0 {
             bindings = <&kp LG(Q)>;
             key-positions = <4 5>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         close_window_0 {
             bindings = <&kp LG(W)>;
             key-positions = <16 17>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         new_window_0 {
             bindings = <&kp LG(T)>;
             key-positions = <28 29>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         separate_window_0 {
             bindings = <&kp LG(N)>;
             key-positions = <30 31>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
 
         comm_spc {
             bindings = <&kp LG(SPACE)>;
             key-positions = <31 32>;
+            slow-release;
+            timeout-ms = <25>;
+            layers = <0>;
         };
     };
 
