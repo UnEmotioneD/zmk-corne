@@ -206,6 +206,11 @@
             timeout-ms = <25>;
             layers = <0>;
         };
+
+        yu_comm_del {
+            bindings = <&kp LG(BACKSPACE)>;
+            key-positions = <6 7>;
+        };
     };
 
     keymap {
