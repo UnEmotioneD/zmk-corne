@@ -23,7 +23,7 @@
     combos {
         compatible = "zmk,combos";
 
-        zx_undo_0 {
+        zx_undo {
             bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
             timeout-ms = <25>;
@@ -31,42 +31,18 @@
             layers = <0>;
         };
 
-        xc_copy_0 {
+        xc_copy {
             bindings = <&kp LG(C)>;
             key-positions = <26 27>;
             timeout-ms = <25>;
             slow-release;
         };
 
-        cv_paste_0 {
+        cv_paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
             timeout-ms = <25>;
             slow-release;
-        };
-
-        zx_undo_4 {
-            bindings = <&kp LC(Z)>;
-            key-positions = <25 26>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <4>;
-        };
-
-        copy_4 {
-            bindings = <&kp LC(C)>;
-            key-positions = <26 27>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <4>;
-        };
-
-        paste_4 {
-            bindings = <&kp LC(V)>;
-            key-positions = <28 27>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <4>;
         };
 
         exclamation {
@@ -149,67 +125,6 @@
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <9 10>;
             timeout-ms = <25>;
-        };
-
-        comm_tab_0 {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <18 19>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <0>;
-        };
-
-        alt_tab_4 {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <18 19>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <4>;
-        };
-
-        quite_app_0 {
-            bindings = <&kp LG(Q)>;
-            key-positions = <4 5>;
-            slow-release;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        close_window_0 {
-            bindings = <&kp LG(W)>;
-            key-positions = <16 17>;
-            slow-release;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        new_window_0 {
-            bindings = <&kp LG(T)>;
-            key-positions = <28 29>;
-            slow-release;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        separate_window_0 {
-            bindings = <&kp LG(N)>;
-            key-positions = <30 31>;
-            slow-release;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        comm_spc {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <31 32>;
-            slow-release;
-            timeout-ms = <25>;
-            layers = <0>;
-        };
-
-        yu_comm_del {
-            bindings = <&kp LG(BACKSPACE)>;
-            key-positions = <6 7>;
         };
     };
 
