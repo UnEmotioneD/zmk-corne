@@ -9,6 +9,14 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt {
+    retro-tap;
+};
+
+&lt {
+    retro-tap;
+};
+
 / {
     macros {
         my_email: my_email {
