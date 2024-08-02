@@ -123,7 +123,7 @@
             bindings = <
 &to 4  &kp LS(F6)     &kp LG(LS(NUMBER_1))  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
 &none  &kp LA(LG(Q))  &kp LG(F12)           &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &none
-&none  &kp LS(LG(F))  &kp LS(LG(O))         &kp LEFT_GUI      &kp F6             &kp LA(LG(R))      &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &my_email
+&none  &kp LS(LG(F))  &kp LS(LG(O))         &kp LEFT_GUI      &kp F6             &kp LA(LC(R))      &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &my_email
                                             &trans            &trans             &trans             &trans                &trans                &trans
             >;
         };
