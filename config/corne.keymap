@@ -118,10 +118,10 @@
 
         layer_2 {
             bindings = <
-&trans            &none                 &none             &kp TILDE    &kp PIPE              &none                    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
-&kp LS(LEFT_ALT)  &kp LC(LA(LEFT_GUI))  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &trans
-&trans            &none                 &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_MUTE  &trans
-                                                          &trans       &kp GLOBE             &mo 3                    &trans      &trans                &trans
+&trans  &none                 &none             &kp TILDE    &kp PIPE              &none                    &trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INSERT  &kp DELETE  &trans
+&trans  &kp LC(LA(LEFT_GUI))  &kp LC(LEFT_ALT)  &kp GRAVE    &kp BACKSLASH         &none                    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &trans
+&trans  &none                 &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)    &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp C_MUTE  &trans
+                                                &trans       &kp GLOBE             &mo 3                    &trans      &trans                &trans
             >;
         };
 
