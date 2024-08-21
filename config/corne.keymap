@@ -81,15 +81,6 @@
             slow-release;
             layers = <4>;
         };
-
-        period {
-            bindings = <&kp DOT>;
-            key-positions = <33 34>;
-            timeout-ms = <25>;
-            slow-release;
-            require-prior-idle-ms = <100>;
-            layers = <1>;
-        };
     };
 
     keymap {
