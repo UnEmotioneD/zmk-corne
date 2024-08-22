@@ -21,6 +21,20 @@
             bindings = <&kp B &kp L &kp A &kp C &kp K &kp E &kp A &kp G &kp L &kp E &kp N1 &kp N0 &kp AT &kp I &kp C &kp L &kp O &kp U &kp D &kp DOT &kp C &kp O &kp M>;
             label = "MY_EMAIL";
         };
+
+        intellij_close_window: eclise_close_window {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TAB &kp ESCAPE>;
+            label = "ECLISE_CLOSE_WINDOW";
+        };
+
+        vim_search: vim_search {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp PRCNT &kp S &kp FSLH>;
+            label = "VIM_SEARCH";
+        };
     };
 
     combos {
@@ -32,6 +46,7 @@
             timeout-ms = <25>;
             slow-release;
             layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         xc_copy_0 {
@@ -39,6 +54,8 @@
             key-positions = <26 27>;
             timeout-ms = <25>;
             slow-release;
+            layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         cv_paste_0 {
@@ -46,6 +63,8 @@
             key-positions = <27 28>;
             timeout-ms = <25>;
             slow-release;
+            layers = <0>;
+            require-prior-idle-ms = <100>;
         };
 
         less_then {
@@ -80,6 +99,70 @@
             timeout-ms = <25>;
             slow-release;
             layers = <4>;
+        };
+
+        xv_cut_1 {
+            bindings = <&kp LG(X)>;
+            key-positions = <26 28>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <1>;
+        };
+
+        jk_period_1 {
+            bindings = <&kp PERIOD>;
+            key-positions = <19 20>;
+        };
+
+        xv_cut_4 {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 28>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <4>;
+        };
+
+        jk_period_5 {
+            bindings = <&kp PERIOD>;
+            key-positions = <19 20>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <5>;
+        };
+
+        we_close_intellij_window_2 {
+            bindings = <&intellij_close_window>;
+            key-positions = <2 3>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        er_intellij_stop_running_2 {
+            bindings = <&kp LG(F2)>;
+            key-positions = <3 4>;
+        };
+
+        qw_intellij_refactor_2 {
+            bindings = <&kp LS(F6)>;
+            key-positions = <1 2>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
+        };
+
+        df_vim_search_2 {
+            bindings = <&vim_search_string>;
+            key-positions = <15 16>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <2>;
         };
     };
 
@@ -121,7 +204,7 @@
 
         layer_3 {
             bindings = <
-&to 4  &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)       &kp LC(R)                &bt BT_CLR            &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
+&to 4  &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)       &kp LS(LC(R))            &bt BT_CLR            &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
 &none  &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)      &kp LS(LG(F11))          &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &none
 &none  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LS(LC(LA(LG(G))))  &kp LS(LC(LA(LG(C))))    &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &my_email
                                         &trans            &trans                 &trans                   &trans                &trans                &trans
