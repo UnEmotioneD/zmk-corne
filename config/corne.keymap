@@ -157,7 +157,7 @@
         };
 
         df_vim_search_2 {
-            bindings = <&vim_search_string>;
+            bindings = <&vim_search>;
             key-positions = <15 16>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
