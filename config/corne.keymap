@@ -129,6 +129,9 @@
         er_intellij_stop_running_2 {
             bindings = <&kp LG(F2)>;
             key-positions = <3 4>;
+            layers = <2>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
         };
 
         we_intellij_refactor_2 {
