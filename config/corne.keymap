@@ -22,13 +22,6 @@
             label = "MY_EMAIL";
         };
 
-        intellij_close_window: eclise_close_window {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TAB &kp ESCAPE>;
-            label = "ECLISE_CLOSE_WINDOW";
-        };
-
         vim_search: vim_search {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -101,13 +94,13 @@
             layers = <4>;
         };
 
-        xv_cut_1 {
+        xv_cut_0 {
             bindings = <&kp LG(X)>;
             key-positions = <26 28>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             slow-release;
-            layers = <1>;
+            layers = <0>;
         };
 
         jk_period_1 {
@@ -133,23 +126,14 @@
             layers = <5>;
         };
 
-        we_close_intellij_window_2 {
-            bindings = <&intellij_close_window>;
-            key-positions = <2 3>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <100>;
-            slow-release;
-            layers = <2>;
-        };
-
         er_intellij_stop_running_2 {
             bindings = <&kp LG(F2)>;
             key-positions = <3 4>;
         };
 
-        qw_intellij_refactor_2 {
+        we_intellij_refactor_2 {
             bindings = <&kp LS(F6)>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             timeout-ms = <25>;
             require-prior-idle-ms = <100>;
             slow-release;
