@@ -37,6 +37,15 @@
             layers = <0>;
             require-prior-idle-ms = <100>;
         };
+        
+        xv_cut_0 {
+            bindings = <&kp LG(X)>;
+            key-positions = <26 28>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <0>;
+        };
 
         xc_copy_0 {
             bindings = <&kp LG(C)>;
@@ -74,6 +83,15 @@
             layers = <4>;
         };
 
+        xv_cut_4 {
+            bindings = <&kp LC(X)>;
+            key-positions = <26 28>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <100>;
+            slow-release;
+            layers = <4>;
+        };
+
         xc_copy_4 {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
@@ -90,34 +108,18 @@
             layers = <4>;
         };
 
-        xv_cut_0 {
-            bindings = <&kp LG(X)>;
-            key-positions = <26 28>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <100>;
-            slow-release;
-            layers = <0>;
-        };
-
         jk_period_1 {
             bindings = <&kp PERIOD>;
             key-positions = <19 20>;
-        };
-
-        xv_cut_4 {
-            bindings = <&kp LC(X)>;
-            key-positions = <26 28>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <100>;
             slow-release;
-            layers = <4>;
+            layers = <1>;
         };
 
         jk_period_5 {
             bindings = <&kp PERIOD>;
             key-positions = <19 20>;
             timeout-ms = <25>;
-            require-prior-idle-ms = <100>;
             slow-release;
             layers = <5>;
         };
