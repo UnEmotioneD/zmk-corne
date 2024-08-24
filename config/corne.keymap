@@ -159,9 +159,6 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <100>;
             flavor = "balanced";
-            hold-trigger-on-release;
-            hold-while-undecided;
-            retro-tap;
         };
 
         new_lt: new_lt {
@@ -173,9 +170,6 @@
             tapping-term-ms = <150>;
             quick-tap-ms = <100>;
             flavor = "balanced";
-            hold-trigger-on-release;
-            hold-while-undecided;
-            retro-tap;
         };
     };
 
