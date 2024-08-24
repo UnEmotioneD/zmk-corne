@@ -9,10 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt { retro-tap; };
-
-&lt { retro-tap; };
-
 / {
     macros {
         my_email: my_email {
@@ -153,6 +149,38 @@
         };
     };
 
+    behaviors {
+        new_mt: new_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            retro-tap;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <1 13 25 26 27 28 14 15 16 17 26 27 28 29 2 3 4 5 6 7 8 9 10 18 19 20 21 22 30 31 32 33 34 23>;
+        };
+
+        new_lt: new_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_LT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            flavor = "tap-preferred";
+            hold-while-undecided;
+            retro-tap;
+            hold-trigger-on-release;
+            require-prior-idle-ms = <100>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -164,10 +192,10 @@
             //                          | GUI | SHFT | LWR |         | RIS & ENT | SPC | KOR |
 
             bindings = <
-&kp TAB                  &kp Q  &kp W  &kp E      &kp R            &kp T               &kp Y                &kp U      &kp I      &kp O    &kp P          &kp BSPC
-&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D      &kp F            &kp G               &kp H                &kp J      &kp K      &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
-&kp LEFT_ALT             &kp Z  &kp X  &kp C      &kp V            &kp B               &kp N                &kp M      &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
-                                       &kp GLOBE  &lt 1 BACKSPACE  &mt LSHIFT ENTER    &mt RIGHT_GUI SPACE  &lt 2 F16  &none
+&kp TAB                  &kp Q  &kp W  &kp E      &kp R                &kp T                   &kp Y                    &kp U          &kp I      &kp O    &kp P          &kp BSPC
+&mt LEFT_CONTROL ESCAPE  &kp A  &kp S  &kp D      &kp F                &kp G                   &kp H                    &kp J          &kp K      &kp L    &kp SEMICOLON  &kp SINGLE_QUOTE
+&kp LEFT_ALT             &kp Z  &kp X  &kp C      &kp V                &kp B                   &kp N                    &kp M          &kp COMMA  &kp DOT  &kp FSLH       &kp ENTER
+                                       &kp GLOBE  &new_lt 1 BACKSPACE  &new_mt LSHIFT ENTER    &new_mt RIGHT_GUI SPACE  &new_lt 2 F16  &none
             >;
         };
 
