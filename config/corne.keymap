@@ -137,6 +137,30 @@
             slow-release;
             layers = <4>;
         };
+
+        re_intellij_stop {
+            bindings = <&kp LG(F2)>;
+            key-positions = <3 4>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <150>;
+            layers = <2>;
+            slow-release;
+        };
+
+        we_intellij_rename {
+            bindings = <&kp LS(F)>;
+            key-positions = <2 3>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <150>;
+            slow-release;
+            layers = <2>;
+        };
+
+        fd_searchReplace {
+            bindings = <&vim_search>;
+            key-positions = <16 15>;
+            layers = <2>;
+        };
     };
 
     behaviors {
