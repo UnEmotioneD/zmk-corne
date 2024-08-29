@@ -149,6 +149,34 @@
             slow-release;
             layers = <2>;
         };
+
+        jk_f16_0 {
+            bindings = <&kp F16>;
+            key-positions = <19 20>;
+            layers = <0>;
+            timeout-ms = <150>;
+        };
+
+        jk_language_4 {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <19 20>;
+            timeout-ms = <150>;
+            layers = <4>;
+        };
+
+        ui_home_0,4 {
+            bindings = <&kp HOME>;
+            key-positions = <7 8>;
+            timeout-ms = <150>;
+            layers = <4 0>;
+        };
+
+        io_end_0,4 {
+            bindings = <&kp END>;
+            key-positions = <8 9>;
+            timeout-ms = <150>;
+            layers = <4 0>;
+        };
     };
 
     behaviors {
