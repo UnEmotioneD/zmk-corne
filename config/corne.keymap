@@ -78,16 +78,17 @@
         zx_undo_4 {
             bindings = <&kp LC(Z)>;
             key-positions = <25 26>;
-            timeout-ms = <25>;
+            timeout-ms = <150>;
             slow-release;
             layers = <4>;
+            require-prior-idle-ms = <150>;
         };
 
         xv_cut_4 {
             bindings = <&kp LC(X)>;
             key-positions = <26 28>;
-            timeout-ms = <25>;
-            require-prior-idle-ms = <100>;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <150>;
             slow-release;
             layers = <4>;
         };
@@ -95,33 +96,28 @@
         xc_copy_4 {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
-            timeout-ms = <25>;
+            timeout-ms = <150>;
             slow-release;
             layers = <4>;
+            require-prior-idle-ms = <150>;
         };
 
         cv_past_4 {
             bindings = <&kt LC(V)>;
             key-positions = <27 28>;
-            timeout-ms = <25>;
+            timeout-ms = <150>;
             slow-release;
             layers = <4>;
+            require-prior-idle-ms = <150>;
         };
 
-        jk_period_1 {
+        jk_period {
             bindings = <&kp PERIOD>;
             key-positions = <19 20>;
-            timeout-ms = <25>;
+            timeout-ms = <150>;
             slow-release;
-            layers = <1>;
-        };
-
-        jk_period_5 {
-            bindings = <&kp PERIOD>;
-            key-positions = <19 20>;
-            timeout-ms = <25>;
-            slow-release;
-            layers = <5>;
+            layers = <1 5>;
+            require-prior-idle-ms = <150>;
         };
 
         er_intellij_stop_running_2 {
@@ -155,6 +151,7 @@
             key-positions = <19 20>;
             layers = <0>;
             timeout-ms = <150>;
+            require-prior-idle-ms = <150>;
         };
 
         jk_language_4 {
@@ -162,6 +159,7 @@
             key-positions = <19 20>;
             timeout-ms = <150>;
             layers = <4>;
+            require-prior-idle-ms = <150>;
         };
 
         ui_home_0,4 {
@@ -169,6 +167,7 @@
             key-positions = <7 8>;
             timeout-ms = <150>;
             layers = <4 0>;
+            require-prior-idle-ms = <150>;
         };
 
         io_end_0,4 {
@@ -176,6 +175,7 @@
             key-positions = <8 9>;
             timeout-ms = <150>;
             layers = <4 0>;
+            require-prior-idle-ms = <150>;
         };
     };
 
