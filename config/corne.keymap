@@ -272,8 +272,8 @@
         layer_7 {
             bindings = <
 &trans  &kp LA(LC(L))  &kp LA(NUMBER_1)  &kp LA(NUMBER_4)  &kp LA(NUMBER_6)   &kp LS(F10)    &bt BT_CLR  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
-&to 0   &kp LS(LA(Q))  &kp LC(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LC(F11)    &kp LC(F5)  &kp LC(GRAVE)     &kp LS(LC(M))     &kp LS(LC(E))  &kp LS(LC(P))  &my_email
-&trans  &kp LS(LC(F))  &kp LS(LC(O))     &kp LS(LA(R))     &kp LS(LA(S))      &none          &none       &kp PRINTSCREEN   &none             &kp LS(LC(G))  &none          &trans
+&to 0   &kp LS(LA(Q))  &kp LC(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LC(F11)    &kp LC(F5)  &kp LC(GRAVE)     &kp LS(LC(M))     &kp LS(LC(E))  &kp LS(LC(P))  &none
+&trans  &kp LS(LC(F))  &kp LS(LC(O))     &kp LS(LA(R))     &kp LS(LA(S))      &none          &none       &kp PRINTSCREEN   &none             &kp LS(LC(G))  &none          &my_email
                                          &trans            &trans             &trans         &trans      &trans            &trans
             >;
         };
