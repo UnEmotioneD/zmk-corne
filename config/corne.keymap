@@ -124,9 +124,6 @@
         xv_cut_win {
             bindings = <&kp LC(X)>;
             key-positions = <26 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            slow-release;
             layers = <4>;
         };
 
