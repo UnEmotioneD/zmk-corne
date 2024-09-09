@@ -151,7 +151,10 @@
         fd_searchReplace {
             bindings = <&vim_search>;
             key-positions = <16 15>;
-            layers = <2>;
+            layers = <2 6>;
+            slow-release;
+            timeout-ms = <150>;
+            require-prior-idle-ms = <150>;
         };
     };
 
