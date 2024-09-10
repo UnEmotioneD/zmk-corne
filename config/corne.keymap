@@ -262,10 +262,10 @@
 
         layer_6 {
             bindings = <
-&trans  &kp HOME          &kp END          &kp TILDE        &kp PIPE            &none                  &none           &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp INSERT  &kp DELETE  &trans
-&trans  &kp LS(LEFT_GUI)  &kp LEFT_GUI     &kp GRAVE        &kp BACKSLASH       &none                  &kp LEFT        &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &kp DOUBLE_QUOTES
-&trans  &none             &kp LS(LC(TAB))  &kp LS(LC(TAB))  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)    &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT  &kp C_MUTE  &trans
-                                           &trans           &trans              &new_lt 7 ENTER        &trans          &trans                &trans
+&trans  &kp HOME          &kp END          &kp TILDE    &kp PIPE            &none                  &none           &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp INSERT  &kp DELETE  &trans
+&trans  &kp LS(LEFT_GUI)  &kp LEFT_GUI     &kp GRAVE    &kp BACKSLASH       &none                  &kp LEFT        &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp C_PLAY  &kp DOUBLE_QUOTES
+&trans  &none             &kp LS(LC(TAB))  &kp LS(TAB)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)    &kp C_PREVIOUS  &kp C_VOLUME_DOWN     &kp C_VOLUME_UP       &kp C_NEXT  &kp C_MUTE  &trans
+                                           &trans       &trans              &new_lt 7 ENTER        &trans          &trans                &trans
             >;
         };
 
