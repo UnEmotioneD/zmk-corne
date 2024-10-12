@@ -179,28 +179,28 @@
 
         default_layer {
             bindings = <
-&kp TILDE  &kp Q                 &kp W                 &kp E                   &kp R                     &kp T              &kp Y             &kp U                       &kp I                     &kp O                   &kp P                      &kp PIPE
-&kp TAB    &left_hrm LEFT_ALT A  &left_hrm LEFT_GUI S  &left_hrm LEFT_SHIFT D  &left_hrm LEFT_CONTROL F  &kp G              &kp H             &right_hrm RIGHT_CONTROL J  &right_hrm RIGHT_SHIFT K  &right_hrm RIGHT_GUI L  &right_hrm RIGHT_ALT SEMI  &kp SINGLE_QUOTE
-&kp GRAVE  &kp Z                 &kp X                 &kp C                   &kp V                     &kp B              &kp N             &kp M                       &kp COMMA                 &kp DOT                 &kp SLASH                  &kp BACKSLASH
-                                                       &kp GLOBE               &kp BACKSPACE             &new_lt 1 ENTER    &new_lt 2 ESCAPE  &kp SPACE                   &kp F16
+&none  &kp Q  &kp W                     &kp E                 &kp R                 &kp T            &kp Y          &kp U                   &kp I                   &kp O                       &kp P          &none
+&none  &kp A  &left_hrm LEFT_CONTROL S  &left_hrm LEFT_ALT D  &left_hrm LEFT_GUI F  &kp G            &kp H          &right_hrm RIGHT_GUI J  &right_hrm RIGHT_ALT K  &right_hrm RIGHT_CONTROL L  &kp BACKSPACE  &none
+&none  &kp Z  &kp X                     &kp C                 &kp V                 &kp B            &kp N          &kp M                   &kp COMMA               &kp DOT                     &kp ENTER      &none
+                                        &none                 &kp LEFT_SHIFT        &new_lt 1 TAB    &new_lt 2 F16  &kp SPACE               &none
             >;
         };
 
         layer_1 {
             bindings = <
-&trans  &kp EXCLAMATION   &kp AT             &kp HASH        &kp DOLLAR       &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp N1            &kp N2             &kp N3          &kp N4           &kp N5         &kp N6          &kp N7         &kp N8        &kp N9                &kp N0                 &kp DOUBLE_QUOTES
-&trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none          &kp UNDERSCORE  &kp MINUS      &kp PLUS      &trans                &kp EQUAL              &trans
-                                             &trans          &trans           &trans         &mo 3           &trans         &trans
+&trans  &kp EXCLAMATION  &kp AT     &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET       &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp N1           &kp N2     &kp N3    &kp N4      &kp N5         &kp N6          &kp N7           &kp N8        &kp N9                &kp N0                 &trans
+&trans  &kp UNDER        &kp MINUS  &kp PLUS  &kp EQUAL   &none          &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans        &trans                &kp SLASH              &trans
+                                    &trans    &trans      &trans         &mo 3           &trans           &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none              &kp C_MUTE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PLAY  &kp DELETE     &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp HOME           &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp PAGE_UP    &none
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp END            &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp PAGE_DOWN  &trans
-                         &trans   &trans   &new_lt 3 ENTER    &trans      &trans                &trans
+&trans  &kp TILDE  &kp QUESTION  &kp COLON         &kp DOUBLE_QUOTES  &kp PIPE         &kp C_MUTE  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PLAY  &kp DELETE     &trans
+&trans  &kp GRAVE  &kp SLASH     &kp SEMI          &kp SINGLE_QUOTE   &kp BACKSLASH    &kp LEFT    &kp DOWN              &kp UP_ARROW          &kp RIGHT   &kp PAGE_UP    &none
+&trans  &kp HOME   &kp END       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none            &kp C_PREV  &kp C_VOLUME_DOWN     &kp C_VOL_UP          &kp C_NEXT  &kp PAGE_DOWN  &trans
+                                 &trans            &trans             &mo 3            &trans      &trans                &trans
             >;
         };
 
