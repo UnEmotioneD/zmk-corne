@@ -266,8 +266,8 @@
         layer_8 {
             bindings = <
 &kp TILDE  &kp APOS                &kp COMMA                 &kp DOT               &kp P                 &kp Y               &kp F              &kp G                   &kp C                   &kp R                       &kp L                     &kp SLASH
-&kp TAB    &left_hrm LEFT_SHIFT A  &left_hrm LEFT_CONTROL O  &left_hrm LEFT_ALT E  &left_hrm LEFT_GUI U  &kp I               &kp D              &right_hrm RIGHT_GUI H  &right_hrm RIGHT_ALT T  &right_hrm RIGHT_CONTROL N  &right_hrm RIGHT_SHIFT S  &kp BACKSLASH
-&kp GRAVE  &kp SEMI                &kp Q                     &kp J                 &kp K                 &kp X               &kp B              &kp M                   &kp W                   &kp V                       &kp Z                     &kp PIPE
+&kp TAB    &left_hrm LEFT_SHIFT A  &left_hrm LEFT_CONTROL O  &left_hrm LEFT_ALT E  &left_hrm LEFT_GUI U  &kp I               &kp D              &right_hrm RIGHT_GUI H  &right_hrm RIGHT_ALT T  &right_hrm RIGHT_CONTROL N  &right_hrm RIGHT_SHIFT S  &kp MINUS
+&kp GRAVE  &kp SEMI                &kp Q                     &kp J                 &kp K                 &kp X               &kp B              &kp M                   &kp W                   &kp V                       &kp Z                     &kp BACKSLASH
                                                              &kp CAPSLOCK          &kp BACKSPACE         &new_lt 10 ENTER    &new_lt 11 ESCAPE  &kp SPACE               &dvorak_to_kor_mac
             >;
         };
