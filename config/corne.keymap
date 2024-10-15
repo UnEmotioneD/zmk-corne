@@ -29,72 +29,56 @@
         zx_undo_mac {
             bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-            slow-release;
+            timeout-ms = <60>;
+            layers = <0 8 9>;
         };
 
         xv_cut_mac {
             bindings = <&kp LG(X)>;
             key-positions = <26 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-            slow-release;
+            timeout-ms = <60>;
+            layers = <0 8 9>;
         };
 
         xc_copy_mac {
             bindings = <&kp LG(C)>;
             key-positions = <26 27>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-            slow-release;
+            timeout-ms = <60>;
+            layers = <0 8 9>;
         };
 
         cv_paste_mac {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            layers = <0>;
-            slow-release;
+            timeout-ms = <60>;
+            layers = <0 8 9>;
         };
 
         zx_undo_win {
             bindings = <&kp LC(Z)>;
             key-positions = <25 26>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            slow-release;
+            timeout-ms = <60>;
             layers = <4>;
         };
 
         xv_cut_win {
             bindings = <&kp LC(X)>;
             key-positions = <26 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
+            timeout-ms = <60>;
             layers = <4>;
-            slow-release;
         };
 
         xc_copy_win {
             bindings = <&kp LC(C)>;
             key-positions = <26 27>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
+            timeout-ms = <60>;
             layers = <4>;
-            slow-release;
         };
 
         cv_past_win {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
-            timeout-ms = <150>;
-            require-prior-idle-ms = <150>;
-            slow-release;
+            timeout-ms = <60>;
             layers = <4>;
         };
 
@@ -103,6 +87,27 @@
             key-positions = <15 16>;
             require-prior-idle-ms = <150>;
             layers = <2 6>;
+        };
+
+        jk_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <19 20>;
+            timeout-ms = <60>;
+        };
+
+        kl_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <20 21>;
+        };
+
+        sd_tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+        };
+
+        df_bspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <15 16>;
         };
     };
 
