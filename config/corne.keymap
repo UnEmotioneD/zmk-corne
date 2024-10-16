@@ -86,7 +86,7 @@
             bindings = <&vim_search>;
             key-positions = <15 16>;
             require-prior-idle-ms = <150>;
-            layers = <2 6>;
+            layers = <2 6 11>;
         };
 
         jk_esc {
