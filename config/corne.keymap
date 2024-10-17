@@ -109,6 +109,34 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <15 16>;
         };
+
+        we_grave {
+            bindings = <&kp GRAVE>;
+            key-positions = <2 3>;
+            timeout-ms = <60>;
+            layers = <0 4 8 9>;
+        };
+
+        er_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <3 4>;
+            timeout-ms = <60>;
+            layers = <0 4 8 9>;
+        };
+
+        ui_backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <7 8>;
+            timeout-ms = <60>;
+            layers = <0 4 8 10>;
+        };
+
+        io_pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <8 9>;
+            timeout-ms = <60>;
+            layers = <0 4 8 9>;
+        };
     };
 
     macros {
