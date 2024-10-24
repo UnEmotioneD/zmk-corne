@@ -198,10 +198,10 @@
 
         layer_3 {
             bindings = <
-&trans  &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &kp LG(NUMBER_1)      &kp LG(NUMBER_2)      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
-&to 8   &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &to 4
-&trans  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &none              &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &my_email
-                                         &trans            &trans             &trans             &trans                &trans                &trans
+&my_email    &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&to 8        &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &to 4
+&bootloader  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &none              &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &bootloader
+                                              &trans            &trans             &trans             &trans                &trans                &trans
             >;
         };
 
@@ -234,10 +234,10 @@
 
         layer_7 {
             bindings = <
-&trans  &kp LC(LA(L))  &kp LA(NUMBER_1)  &kp LA(NUMBER_4)  &kp LA(NUMBER_6)   &kp LS(F10)    &bt BT_CLR  &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
-&to 0   &kp LS(LA(Q))  &kp F12           &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LC(F11)    &kp LC(F5)  &kp LC(GRAVE)     &kp LS(LC(M))     &kp LS(LC(E))  &kp LS(LC(P))  &trans
-&trans  &kp LS(LC(F))  &kp LS(LC(O))     &kp LS(LA(R))     &kp LS(LA(S))      &none          &kp LA(F4)  &kp PRINTSCREEN   &none             &kp LS(LC(G))  &kp LS(LA(F))  &my_email
-                                         &trans            &trans             &trans         &trans      &trans            &trans
+&my_email    &kp LC(LA(L))  &kp LA(NUMBER_1)  &kp LA(NUMBER_4)  &kp LA(NUMBER_6)   &kp LS(F10)    &bt BT_CLR  &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&to 0        &kp LS(LA(Q))  &kp F12           &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LC(F11)    &kp LC(F5)  &kp LC(GRAVE)  &kp LS(LC(M))    &kp LS(LC(E))  &kp LS(LC(P))  &none
+&bootloader  &kp LS(LC(F))  &kp LS(LC(O))     &kp LS(LA(R))     &kp LS(LA(S))      &none          &none       &kp LA(F4)     &kp PRINTSCREEN  &kp LS(LC(G))  &kp LS(LA(F))  &bootloader
+                                              &trans            &trans             &trans         &trans      &trans         &trans
             >;
         };
 
@@ -279,10 +279,10 @@
 
         layer_12 {
             bindings = <
-&trans  &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &kp LG(NUMBER_1)      &kp LG(NUMBER_2)  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2
-&to 0   &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))     &kp LS(LG(E))  &kp LS(LG(P))  &none
-&trans  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &none              &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &none             &kp LS(LC(G))  &kp LS(LA(F))  &my_email
-                                         &trans            &trans             &trans             &trans                &trans                &trans
+&my_email    &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
+&to 0        &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))  &kp LS(LG(E))  &kp LS(LG(P))  &none
+&bootloader  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &none              &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &none          &kp LS(LC(G))  &kp LS(LA(F))  &bootloader
+                                              &trans            &trans             &trans             &trans                &trans                &trans
             >;
         };
     };
