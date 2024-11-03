@@ -30,35 +30,35 @@
             bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
             timeout-ms = <60>;
-            layers = <0 8 9>;
+            layers = <0>;
         };
 
         xv_cut_mac {
             bindings = <&kp LG(X)>;
             key-positions = <26 28>;
             timeout-ms = <60>;
-            layers = <0 8 9>;
+            layers = <0>;
         };
 
         xc_copy_mac {
             bindings = <&kp LG(C)>;
             key-positions = <26 27>;
             timeout-ms = <60>;
-            layers = <0 8 9>;
+            layers = <0>;
         };
 
         cv_paste_mac {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
             timeout-ms = <60>;
-            layers = <0 8 9>;
+            layers = <0>;
         };
 
         vim_search {
             bindings = <&vim_search>;
             key-positions = <15 16>;
             require-prior-idle-ms = <150>;
-            layers = <2 6 11>;
+            layers = <2 6>;
         };
     };
 
@@ -80,14 +80,14 @@
         dvorak_to_kor_mac: dvorak_lang {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F16 &to 9>;
+            bindings = <&kp F16 &to 0>;
             label = "DVORAK_LANG";
         };
 
         kor_to_dvorak_mac: kor_to_dvorak_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F16 &to 8>;
+            bindings = <&kp F16 &to 0>;
             label = "KOR_TO_DVORAK_MAC";
         };
 
@@ -185,7 +185,7 @@
         layer_3 {
             bindings = <
 &my_email    &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&to 8        &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &to 4
+&none        &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &to 4
 &bootloader  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &none              &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LC(G))  &kp LS(LA(F))  &bootloader
                                               &trans            &trans             &trans             &trans                &trans                &trans
             >;
@@ -224,51 +224,6 @@
 &to 0        &kp LS(LA(Q))  &kp F12           &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LC(F11)    &kp LC(F5)  &kp LC(GRAVE)  &kp LS(LC(M))    &kp LS(LC(E))  &kp LS(LC(P))  &none
 &bootloader  &kp LS(LC(F))  &kp LS(LC(O))     &kp LS(LA(R))     &kp LS(LA(S))      &none          &none       &kp LA(F4)     &kp PRINTSCREEN  &kp LS(LC(G))  &kp LS(LA(F))  &bootloader
                                               &trans            &trans             &trans         &trans      &trans         &trans
-            >;
-        };
-
-        layer_8 {
-            bindings = <
-&kp TILDE  &kp APOS                &kp COMMA                 &kp DOT               &kp P                 &kp Y               &kp F              &kp G                   &kp C                   &kp R                       &kp L                     &kp SLASH
-&caps      &left_hrm LEFT_SHIFT A  &left_hrm LEFT_CONTROL O  &left_hrm LEFT_ALT E  &left_hrm LEFT_GUI U  &kp I               &kp D              &right_hrm RIGHT_GUI H  &right_hrm RIGHT_ALT T  &right_hrm RIGHT_CONTROL N  &right_hrm RIGHT_SHIFT S  &kp MINUS
-&kp GRAVE  &kp SEMI                &kp Q                     &kp J                 &kp K                 &kp X               &kp B              &kp M                   &kp W                   &kp V                       &kp Z                     &none
-                                                             &kp TAB               &kp BACKSPACE         &new_lt 10 ENTER    &new_lt 11 ESCAPE  &kp SPACE               &dvorak_to_kor_mac
-            >;
-        };
-
-        layer_9 {
-            bindings = <
-&kp TILDE  &kp Q                   &kp W                     &kp E                 &kp R                 &kp T               &kp Y              &kp U                   &kp I                   &kp O                       &kp P                             &kp PIPE
-&caps      &left_hrm LEFT_SHIFT A  &left_hrm LEFT_CONTROL S  &left_hrm LEFT_ALT D  &left_hrm LEFT_GUI F  &kp G               &kp H              &right_hrm RIGHT_GUI J  &right_hrm RIGHT_ALT K  &right_hrm RIGHT_CONTROL L  &right_hrm RIGHT_SHIFT SEMICOLON  &kp APOS
-&kp GRAVE  &kp Z                   &kp X                     &kp C                 &kp V                 &kp B               &kp N              &kp M                   &kp COMMA               &kp DOT                     &kp FSLH                          &kp BACKSLASH
-                                                             &kp TAB               &kp BACKSPACE         &new_lt 10 ENTER    &new_lt 11 ESCAPE  &kp SPACE               &kor_to_dvorak_mac
-            >;
-        };
-
-        layer_10 {
-            bindings = <
-&trans  &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
-&trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDER  &kp MINUS      &kp PLUS      &trans                &kp EQUAL              &trans
-                                           &trans             &trans          &trans             &mo 12     &trans         &trans
-            >;
-        };
-
-        layer_11 {
-            bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none               &kp C_MUTE  &kp PAGE_UP        &kp PAGE_DOWN  &kp C_PLAY  &kp DELETE            &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp HOME            &kp LEFT    &kp DOWN           &kp UP_ARROW   &kp RIGHT   &kp C_BRIGHTNESS_INC  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp END             &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOL_UP   &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &trans
-                         &trans   &trans   &new_lt 12 ENTER    &trans      &trans             &trans
-            >;
-        };
-
-        layer_12 {
-            bindings = <
-&my_email    &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(NUMBER_6)   &kp LS(LC(R))      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&to 0        &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))   &kp LS(LG(E))  &kp LS(LG(P))  &none
-&bootloader  &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &none              &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(N5))  &kp LS(LC(G))  &kp LS(LA(F))  &bootloader
-                                              &trans            &trans             &trans             &trans                &trans                &trans
             >;
         };
     };
