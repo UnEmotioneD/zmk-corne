@@ -60,6 +60,38 @@
             require-prior-idle-ms = <150>;
             layers = <2 6>;
         };
+
+        windows_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <25 26>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <4>;
+        };
+
+        windows_copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <4>;
+        };
+
+        windows_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <4>;
+        };
+
+        windows_cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <28 26>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <4>;
+        };
     };
 
     macros {
