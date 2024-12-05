@@ -52,7 +52,7 @@
             layers = <0>;
         };
 
-        mac_cut {
+        mac_past {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
             timeout-ms = <60>;
@@ -82,7 +82,7 @@
             layers = <4>;
         };
 
-        win_cut {
+        win_past {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
             timeout-ms = <60>;
