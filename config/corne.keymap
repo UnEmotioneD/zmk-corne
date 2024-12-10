@@ -52,23 +52,24 @@
             layers = <0>;
         };
 
-        mac_past {
+        mac_paste {
             bindings = <&kp LG(V)>;
             key-positions = <27 28>;
             timeout-ms = <60>;
             layers = <0>;
         };
 
-        vim_search {
-            bindings = <&vim_search>;
-            key-positions = <15 16>;
-            require-prior-idle-ms = <150>;
-            layers = <2 6>;
-        };
-
         win_undo {
             bindings = <&kp LC(Z)>;
             key-positions = <25 26>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <100>;
+            layers = <4>;
+        };
+
+        win_cut {
+            bindings = <&ctrl_x>;
+            key-positions = <28 26>;
             timeout-ms = <60>;
             require-prior-idle-ms = <100>;
             layers = <4>;
@@ -82,7 +83,7 @@
             layers = <4>;
         };
 
-        win_past {
+        win_paste {
             bindings = <&kp LC(V)>;
             key-positions = <27 28>;
             timeout-ms = <60>;
@@ -90,12 +91,11 @@
             layers = <4>;
         };
 
-        win_cut {
-            bindings = <&ctrl_x>;
-            key-positions = <28 26>;
-            timeout-ms = <60>;
-            require-prior-idle-ms = <100>;
-            layers = <4>;
+        vim_search {
+            bindings = <&vim_search>;
+            key-positions = <15 16>;
+            require-prior-idle-ms = <150>;
+            layers = <2 6>;
         };
     };
 
@@ -107,27 +107,6 @@
             label = "MY_EMAIL";
         };
 
-        vim_search: vim_search {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp COLON &kp PRCNT &kp S &kp FSLH>;
-            label = "VIM_SEARCH";
-        };
-
-        dvorak_to_kor_mac: dvorak_lang {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F16 &to 0>;
-            label = "DVORAK_LANG";
-        };
-
-        kor_to_dvorak_mac: kor_to_dvorak_mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F16 &to 0>;
-            label = "KOR_TO_DVORAK_MAC";
-        };
-
         caps: caps_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -136,6 +115,13 @@
             tap-ms = <200>;
         };
 
+        ctrl_x: ctrl_x {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CTRL_X";
+        };
+        
         double_shift: double_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -143,18 +129,18 @@
             label = "DOUBLE_SHIFT";
         };
 
-        ctrl_x: ctrl_x {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(X)>;
-            label = "CTRL_X";
-        };
-
         triple_shift: triple_shift {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT &kp LEFT_SHIFT &kp LEFT_SHIFT>;
             label = "TRIPLE_SHIFT";
+        };
+
+        vim_search: vim_search {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp COLON &kp PRCNT &kp S &kp FSLH>;
+            label = "VIM_SEARCH";
         };
     };
 
