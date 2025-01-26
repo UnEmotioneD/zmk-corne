@@ -176,7 +176,7 @@
 &kp TILDE                   &kp Q  &kp W                     &kp E                 &kp R                         &kp T          &kp Y             &kp U                   &kp I                   &kp O                       &kp P                             &kp PIPE
 &kp LC(LA(LG(LEFT_SHIFT)))  &kp A  &left_hrm LEFT_CONTROL S  &left_hrm LEFT_ALT D  &left_hrm LEFT_GUI F          &kp G          &kp H             &right_hrm RIGHT_GUI J  &right_hrm RIGHT_ALT K  &right_hrm RIGHT_CONTROL L  &right_hrm RIGHT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
 &kp GRAVE                   &kp Z  &kp X                     &kp C                 &kp V                         &kp B          &kp N             &kp M                   &kp COMMA               &kp DOT                     &kp SLASH                         &kp BACKSLASH
-                                                             &kp TAB               &new_mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER    &new_lt 2 ESCAPE  &kp SPACE               &kp F16
+                                                             &kp TAB               &new_mt LEFT_SHIFT BACKSPACE  &lt 1 ENTER    &new_lt 2 ESCAPE  &new_lt 8 SPACE         &kp F16
             >;
         };
 
@@ -185,7 +185,7 @@
 &trans  &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp DOUBLE_QUOTES
 &trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDER  &kp MINUS      &kp PLUS      &trans                &kp EQUAL              &trans
-                                           &trans             &trans          &trans             &mo 3      &trans         &trans
+                                           &trans             &mo 9           &trans             &mo 3      &trans         &trans
             >;
         };
 
@@ -194,13 +194,13 @@
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp INSERT     &kp C_MUTE  &kp PAGE_UP        &kp PAGE_DOWN  &kp C_PLAY  &kp DELETE            &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp HOME       &kp LEFT    &kp DOWN           &kp UP_ARROW   &kp RIGHT   &kp C_BRIGHTNESS_INC  &trans
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp END        &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOL_UP   &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &trans
-                         &trans   &trans   &lt 3 ENTER    &trans      &trans             &trans
+                         &trans   &trans   &lt 3 ENTER    &trans      &mo 9              &trans
             >;
         };
 
         layer_3 {
             bindings = <
-&my_email  &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(N8)         &kp LS(LC(R))      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   
+&my_email  &kp LA(LG(L))  &kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(N8)         &kp LS(LC(R))      &bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
 &none      &kp LA(LG(Q))  &kp LG(F12)       &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LS(LG(F11))    &kp LC(F5)            &kp LC(GRAVE)         &kp LS(LG(M))         &kp LS(LG(E))  &kp LS(LG(P))  &to 4
 &none      &kp LS(LG(F))  &kp LS(LG(O))     &kp LA(LG(R))     &kp LA(LG(S))      &kp LS(LG(R))      &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))  &kp LS(LG(F))  &kp LS(LA(F))  &none
                                             &trans            &trans             &trans             &trans                &trans                &trans
@@ -212,7 +212,7 @@
 &kp TILDE                   &kp Q  &kp W                     &kp E                 &kp R                         &kp T          &kp Y             &kp U                  &kp I                  &kp O                      &kp P                            &kp PIPE
 &kp LC(LG(LA(LEFT_SHIFT)))  &kp A  &left_hrm LEFT_CONTROL S  &left_hrm LEFT_GUI D  &left_hrm LEFT_ALT F          &kp G          &kp H             &right_hrm LEFT_ALT J  &right_hrm LEFT_GUI K  &right_hrm LEFT_CONTROL L  &right_hrm LEFT_SHIFT SEMICOLON  &kp SINGLE_QUOTE
 &kp GRAVE                   &kp Z  &kp X                     &kp C                 &kp V                         &kp B          &kp N             &kp M                  &kp COMMA              &kp DOT                    &kp FSLH                         &kp BACKSLASH
-                                                             &kp TAB               &new_mt LEFT_SHIFT BACKSPACE  &lt 5 ENTER    &new_lt 6 ESCAPE  &kp SPACE              &kp RIGHT_ALT
+                                                             &kp TAB               &new_mt LEFT_SHIFT BACKSPACE  &lt 5 ENTER    &new_lt 6 ESCAPE  &new_lt 8 SPACE        &kp RIGHT_ALT
             >;
         };
 
@@ -221,7 +221,7 @@
 &trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
 &trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6          &kp N7         &kp N8        &kp N9                &kp N0                 &kp DOUBLE_QUOTES
 &trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE  &kp MINUS      &kp PLUS      &trans                &kp EQUAL              &trans
-                                           &trans             &trans          &trans             &mo 7           &trans         &trans
+                                           &trans             &mo 9           &trans             &mo 7           &trans         &trans
             >;
         };
 
@@ -230,16 +230,34 @@
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp INSERT     &kp C_MUTE      &kp PAGE_UP        &kp PAGE_DOWN    &kp C_PLAY  &kp DELETE            &trans
 &trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp HOME       &kp LEFT        &kp DOWN           &kp UP_ARROW     &kp RIGHT   &kp C_BRIGHTNESS_INC  &none
 &trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp END        &kp C_PREVIOUS  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &trans
-                         &trans   &trans   &lt 7 ENTER    &trans          &trans             &trans
+                         &trans   &trans   &lt 7 ENTER    &trans          &mo 9              &trans
             >;
         };
 
         layer_7 {
             bindings = <
-&my_email  &kp LC(LA(S))   &kp LA(NUMBER_1)  &kp LA(NUMBER_6)  &kp LA(NUMBER_8)   &none     &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   
+&my_email  &kp LC(LA(S))   &kp LA(NUMBER_1)  &kp LA(NUMBER_6)  &kp LA(NUMBER_8)   &none     &bt BT_CLR     &bt BT_SEL 0   &bt BT_SEL 1     &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
 &to 0      &kp LA(INSERT)  &kp LC(LA(L))     &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &none     &kp LC(F5)     &kp LC(GRAVE)  &kp LS(LC(M))    &kp LS(LC(E))  &kp LS(LC(P))  &none
 &none      &kp LA(F7)      &kp LS(F6)        &double_shift     &kp LS(F10)        &none     &triple_shift  &kp LA(F4)     &kp PRINTSCREEN  &kp LS(LC(F))  &kp LS(LA(F))  &none
                                              &trans            &trans             &trans    &trans         &trans         &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &kp TILDE  &kp DQT  &kp PIPE       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp SQT  &kp BACKSLASH  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans   &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans         &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_9 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &bootloader    &bootloader  &to 0      &trans  &trans  &to 4   &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans       &my_email  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans         &trans       &trans     &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans         &trans       &trans     &trans
             >;
         };
     };
