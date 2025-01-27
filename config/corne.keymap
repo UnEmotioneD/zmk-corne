@@ -245,10 +245,10 @@
 
         layer_8 {
             bindings = <
-&trans  &kp TILDE  &kp DQT  &kp PIPE       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp SQT  &kp BACKSLASH  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans   &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans         &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &kp TILDE  &kp DQT  &kp PIPE       &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp GRAVE  &kp SQT  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans   &trans         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans   &trans         &trans  &trans  &trans  &trans
             >;
         };
 
