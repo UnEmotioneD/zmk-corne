@@ -179,9 +179,9 @@
 
         layer_1 {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT            &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp DOUBLE_QUOTES
-&trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDER  &kp MINUS      &kp PLUS      &trans                &kp EQUAL              &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND          &kp DOLLAR      &kp PERCENT        &kp CARET  &kp AMPERSAND  &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6     &kp N7         &kp N8       &kp N9                &kp N0                 &kp DOUBLE_QUOTES
+&trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDER  &kp MINUS      &kp KP_PLUS  &trans                &kp EQUAL              &trans
                                            &trans             &mo 9           &trans             &mo 3      &trans         &trans
             >;
         };
@@ -215,9 +215,9 @@
 
         layer_5 {
             bindings = <
-&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR      &kp PERCENT        &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6          &kp N7         &kp N8        &kp N9                &kp N0                 &kp DOUBLE_QUOTES
-&trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE  &kp MINUS      &kp PLUS      &trans                &kp EQUAL              &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN       &kp POUND          &kp DOLLAR      &kp PERCENT        &kp CARET       &kp AMPERSAND  &kp ASTRK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp N1           &kp N2            &kp N3             &kp N4          &kp N5             &kp N6          &kp N7         &kp N8       &kp N9                &kp N0                 &kp DOUBLE_QUOTES
+&trans  &none            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp UNDERSCORE  &kp MINUS      &kp KP_PLUS  &trans                &kp EQUAL              &trans
                                            &trans             &mo 9           &trans             &mo 7           &trans         &trans
             >;
         };
@@ -242,10 +242,10 @@
 
         layer_8 {
             bindings = <
-&trans  &trans  &kp TILDE  &kp DQT  &kp PIPE       &trans    &trans  &trans         &trans         &trans         &trans         &trans
-&trans  &trans  &kp GRAVE  &kp SQT  &kp BACKSLASH  &trans    &trans  &kp LS(LC(F))  &kp LS(LC(O))  &kp LS(LC(R))  &kp LS(LA(S))  &trans
-&trans  &trans  &trans     &trans   &trans         &trans    &trans  &kp LC(F11)    &kp LS(LA(Q))  &kp LS(LA(R))  &kp LS(LA(Z))  &trans
-                           &trans   &trans         &trans    &trans  &trans         &trans
+&trans  &trans  &kp TILDE  &kp DOUBLE_QUOTES  &kp PIPE       &trans    &trans  &trans         &trans         &trans         &trans         &trans
+&trans  &trans  &kp GRAVE  &kp SQT            &kp BACKSLASH  &trans    &trans  &kp LS(LC(F))  &kp LS(LC(O))  &kp LS(LC(R))  &kp LS(LA(S))  &trans
+&trans  &trans  &trans     &trans             &trans         &trans    &trans  &kp LC(F11)    &kp LS(LA(Q))  &kp LS(LA(R))  &kp LS(LA(Z))  &trans
+                           &trans             &trans         &trans    &trans  &trans         &trans
             >;
         };
 
