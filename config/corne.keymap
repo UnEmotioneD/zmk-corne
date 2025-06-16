@@ -73,6 +73,11 @@
             require-prior-idle-ms = <100>;
             layers = <4>;
         };
+
+        jk_ctrl_y {
+            bindings = <&kp LC(Y)>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
